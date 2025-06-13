@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ajakan Nonton</title>
+  <title>Ajakan Nonton & Telegram</title>
   <style>
     body {
       background-color: #121212;
@@ -13,7 +13,19 @@
       font-family: 'Arial', sans-serif;
     }
 
-    .btn-watch-now {
+    h1 {
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn-custom {
       display: inline-block;
       padding: 15px 30px;
       background-color: #e50914;
@@ -27,22 +39,31 @@
       box-shadow: 0 4px 10px rgba(229, 9, 20, 0.5);
     }
 
-    .btn-watch-now:hover {
+    .btn-custom:hover {
       background-color: #ff0a16;
       box-shadow: 0 6px 14px rgba(255, 10, 22, 0.6);
       transform: scale(1.05);
     }
 
-    h1 {
-      margin-bottom: 40px;
-      font-size: 36px;
+    .btn-telegram {
+      background-color: #0088cc;
+      box-shadow: 0 4px 10px rgba(0, 136, 204, 0.5);
+    }
+
+    .btn-telegram:hover {
+      background-color: #00a0e4;
+      box-shadow: 0 6px 14px rgba(0, 160, 228, 0.6);
     }
   </style>
 </head>
 <body>
 
-  <h1>Ayo Nonton Film Favoritmu Sekarang!</h1>
-  <a href="#link-nonton" class="btn-watch-now">🎬 Nonton Sekarang</a>
+  <h1>Ayo Nonton & Dapat Info Film Terbaru!</h1>
+
+  <div class="button-group">
+    <a href="https://indoxx1.web.id/" class="btn-custom">🎬 Nonton Sekarang</a>
+    <a href="https://t.me/indoxx1coid" target="_blank" class="btn-custom btn-telegram">📲 Gabung Telegram</a>
+  </div>
 
 </body>
 </html>
